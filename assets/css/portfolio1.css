@@ -1,0 +1,188 @@
+*{
+   
+    color: rgb(240, 5, 158);
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.header{
+    height: 120vh;
+    width: 100%;
+    background-image: url(/project/assets/images/coder_4x.webp);
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 8%;   
+    padding-right: 8%; 
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 4px 25px;
+    font-weight: bold;
+   
+}
+nav ul li a:hover{
+    color: rgb(255, 229, 127);
+}
+nav ul li a{
+    text-decoration: none;
+}
+
+.H_content{
+    position: absolute;
+    top:40%;
+    left: 42%;
+    font-size: small;
+  
+}
+.About_me{
+    display: flex;
+    align-items: center;
+    
+}
+.A_content{
+    padding: 50px;
+
+}
+
+.A_content h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.A_content p{
+    font-size: 22px;
+    padding-left: 40px;
+}
+button{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 22px;
+    padding: 10px;
+    color: rgb(240, 5, 158); 
+    border: 2px solid rgb(209, 27, 139);
+    border-radius: 20px;
+    background-color: rgb(241, 230, 239);
+  
+    
+}
+button a:hover{
+    color: rgb(255, 229, 127);
+
+}
+button a{
+    text-decoration: none;
+}
+.skills{
+    display: grid;
+    text-align: center;
+    height: 70vh;
+    place-items: center;
+    position: relative;
+    margin: auto;
+   
+
+}
+.container{
+    display: flex;
+    gap: 10px;
+    animation: scroll 30s linear infinite;
+}
+.card{
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 240px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+
+}
+.card:nth-child(odd){
+    background: linear-gradient(-229deg,rgb(55, 255, 0),rgb(223, 43, 187));
+}
+.card:nth-child(even){
+    background: linear-gradient(-229deg,rgb(216, 29, 37),rgb(7, 0, 55));
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translate(calc(-250px * 5));
+    }
+    
+}
+.contact{
+    display: flex;
+
+}
+.contact-box h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.left-c{
+    flex-basis: 60%;
+    background-color: rgb(200, 228, 179);
+    padding: 40px 60px;
+    
+}
+.right-c{
+    flex-basis: 40%;
+    background-color: yellow;
+    padding: 40px;
+}
+.left-c h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.left-c address{
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    padding-left: 20px;
+
+}
+.right-c h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    padding-left: 8px;
+}
+.u-name {
+    margin-bottom: 5px;
+}
+.u-name input{
+    width: 500px;
+    height: 20px;
+}
+.email1 {
+    margin-bottom: 5px;
+}
+.email1 input{
+    width: 500px;
+    height: 20px;
+}
+
+.msg textarea{
+    height: 50px;
+    width: 500px;
+    
+}
+.submit input{
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+}
